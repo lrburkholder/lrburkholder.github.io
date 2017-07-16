@@ -19,6 +19,8 @@ Nope.
 
 That didn't happen.
 
+In other news, I think the next few posts will be about the 'more ideas' that are at the end of this tutorial.
+
 [1][http://aurelia.io/hub.html#/doc/article/aurelia/framework/latest/contact-manager-tutorial/1]
 
 [2][https://github.com/aurelia/cli/issues/508]
