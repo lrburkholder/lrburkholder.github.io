@@ -1,7 +1,7 @@
 ---
 title: "Hello Cliche!"
 description: "The first post, from 2017, about starting to write things down."
-date: 2017-07-12
+date: 2017-07-11
 ---
 
 It's time for me to go into that next step of my career as a developer - starting to blog.
