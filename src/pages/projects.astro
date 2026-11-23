@@ -3,10 +3,37 @@ import Base from '../layouts/Base.astro';
 ---
 <Base title="Projects">
   <h1>Projects</h1>
-  <h2>Battalion</h2>
-  <p>A graph-based orchestrator for AI-assisted software development, built to explore a hypothesis: software improves when human developers understand and stand behind the code that AI produces.</p>
-  <p>Humans decide. AIs execute. Both learn.</p>
-  <p><a href="/writing/">Read the Battalion devlog</a>.</p>
-  <h2>Cross-agent learning experiments</h2>
-  <p>Experiments in extracting lessons from coding-agent sessions and making them available across tools. More detail to follow as the work develops.</p>
+  <p>These projects explore how software can help people build, understand, and improve their own work. Some are active experiments. Others are ideas I intend to test.</p>
+
+  <h2 class="section-heading">In development</h2>
+  <section class="project-card" aria-labelledby="battalion">
+    <h3 id="battalion">Battalion</h3>
+    <p>A human-directed orchestrator for AI-assisted software engineering. Battalion connects focused roles through structured workflows, with explicit approval points, durable artifacts, and checks that enforce important rules.</p>
+    <p>The goal is not to replace the developer. It is to reduce mechanical work while improving code quality and human understanding.</p>
+    <p><em>Humans decide. Battalion executes. Both learn.</em></p>
+    <p class="project-links"><a href="https://github.com/lrburkholder/battalion">GitHub repository</a><a href="/writing/">Development writing</a></p>
+  </section>
+  <section class="project-card" aria-labelledby="lattivra">
+    <h3 id="lattivra">Lattivra</h3>
+    <p>An experimental, local-first project for exploring knowledge stored as Open Knowledge Format (OKF) artifacts. It has two independent parts: a planned read-only Explorer for navigating artifacts across sources, and an Engineering Profile that defines lightweight Markdown conventions for specifications, decisions, and implementation plans.</p>
+    <p>Lattivra is independent of Battalion. Its artifacts and conventions are intended to be useful across tools, including future projects.</p>
+    <p class="project-links"><a href="https://github.com/lrburkholder/lattivra">GitHub repository</a></p>
+  </section>
+  <section class="project-card" aria-labelledby="platoon">
+    <h3 id="platoon">Platoon</h3>
+    <p>A smaller, prompt-based workflow for time-limited software engineering tasks, including technical interview exercises where AI tools are permitted. It divides work into focused roles while keeping scope, approvals, verification, and final submission under human control.</p>
+    <p>Platoon also provides a useful comparison: when does Battalion's additional orchestration justify its complexity?</p>
+    <p class="project-links"><a href="https://github.com/lrburkholder/platoon">GitHub repository</a></p>
+  </section>
+  <h2 class="section-heading">Planned projects</h2>
+  <p>These are concepts rather than finished products. Their scope and names may change.</p>
+  <section class="project-card project-card--planned" aria-labelledby="writers-bloc">
+    <h3 id="writers-bloc">Writer's Bloc</h3>
+    <p>An inversion of the AI coding assistant: the human writes, while AI challenges, critiques, and helps revise the work. The aim is to strengthen the writer's judgment rather than generate prose on their behalf.</p>
+    <p class="project-links"><a href="https://github.com/lrburkholder/writersbloc">Early repository</a></p>
+  </section>
+  <section class="project-card project-card--planned" aria-labelledby="dojo">
+    <h3 id="dojo">Dojo</h3>
+    <p>A learning and practice tool that turns software engineering artifacts and codebase knowledge into guided explanations, questions, and exercises. The goal is to help developers understand systems rather than merely accept AI-generated changes.</p>
+  </section>
 </Base>
