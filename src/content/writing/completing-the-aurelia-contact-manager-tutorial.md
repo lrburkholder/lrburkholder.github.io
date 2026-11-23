@@ -1,7 +1,7 @@
 ---
 title: "Completing the Aurelia Contact Manager Tutorial"
 description: "A few gotchas encountered while following the Aurelia Contact Manager tutorial in 2017."
-date: 2017-07-16
+date: 2017-07-15
 ---
 
 I ran into a couple of issues while trying to run through the [Contact Manager tutorial](http://aurelia.io/hub.html#/doc/article/aurelia/framework/latest/contact-manager-tutorial/1) for Aurelia.
