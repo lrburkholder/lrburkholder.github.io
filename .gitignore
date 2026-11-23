@@ -1,3 +1,20 @@
-_site
-.sass-cache
+# Dependencies
+node_modules/
+
+# Astro output and generated types
+dist/
+.astro/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Logs and OS files
+npm-debug.log*
+.DS_Store
+
+# Legacy Jekyll output
+_site/
+.sass-cache/
 .jekyll-metadata
