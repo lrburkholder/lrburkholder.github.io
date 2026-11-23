@@ -7,12 +7,12 @@ const posts = (await getCollection('writing', ({ data }) => !data.draft)).sort((
   <h1>Building software with humans still in charge.</h1>
   <p>I'm a software engineer interested in architecture, automation, and the changing relationship between developers and AI coding agents.</p>
   <p>I'm exploring how human judgment, structured workflows, and feedback loops can make AI-assisted development more reliable.</p>
-  <h2>Projects</h2>
-  <p><strong>Battalion</strong> — Human-directed orchestration for AI-assisted software engineering.</p>
-  <p><strong>Lattivra</strong> — Local-first exploration of open knowledge artifacts and lightweight engineering documentation conventions.</p>
-  <p><strong>Platoon</strong> — A lightweight, human-controlled AI workflow for time-limited coding exercises.</p>
+  <h2 class="section-heading">Projects</h2>
+  <div class="project-card"><h3>Battalion</h3><p>Human-directed orchestration for AI-assisted software engineering.</p></div>
+  <div class="project-card"><h3>Lattivra</h3><p>Local-first exploration of open knowledge artifacts and lightweight engineering documentation conventions.</p></div>
+  <div class="project-card"><h3>Platoon</h3><p>A lightweight, human-controlled AI workflow for time-limited coding exercises.</p></div>
   <p><a href="/projects/">Explore active and planned projects</a></p>
-  <h2>Recent writing</h2>
+  <h2 class="section-heading">Recent writing</h2>
   {posts.map(post => <article><h3><a href={`/writing/${post.id}/`}>{post.data.title}</a></h3><p class="muted">{post.data.description}</p></article>)}
   <p><a href="/writing/">All writing</a></p>
 </Base>
