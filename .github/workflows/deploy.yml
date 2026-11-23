@@ -1,5 +1,7 @@
-name: Deploy Astro to GitHub Pages
+name: Build and deploy Astro
 on:
+  pull_request:
+    branches: [master]
   push:
     branches: [master]
   workflow_dispatch:
@@ -8,7 +10,7 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: pages
+  group: pages-${{ github.ref }}
   cancel-in-progress: true
 jobs:
   build:
@@ -21,9 +23,11 @@ jobs:
       - run: npm install
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request'
         with:
           path: dist
   deploy:
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
